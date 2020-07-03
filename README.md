@@ -1,5 +1,7 @@
 # AndroidSliderViewSample
-This is a sample Android project to demonstrate how to use horizontal and vertical carousels and slideshow using Android Slider library created by sung2063.
+This is a sample Android project to demonstrate how to use Android Slider library created by sung2063.<br/>
+The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
+
 
 ## Screenshots
 
@@ -15,6 +17,7 @@ This is a sample Android project to demonstrate how to use horizontal and vertic
     <td>Slideshow</td>
   </tr>
  </table>
+
 
 ## Instruction
 
