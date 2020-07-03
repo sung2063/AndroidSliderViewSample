@@ -42,4 +42,4 @@ The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> an
 2) Open the project on Android Studio
 3) Run the program either on Android virtual device or your Android device 
 
-For more information on how to use Android SliderViews library, check out the library link: https://github.com/sung2063/AndroidSliderViewsLibrary
+Check out <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android SliderViews library</a> for more information on library usage.
