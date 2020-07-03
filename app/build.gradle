@@ -33,7 +33,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
     // Libraries
-    implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.1'
-    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.2'
+    implementation 'com.google.android.material:material:1.1.0'
 
 }
