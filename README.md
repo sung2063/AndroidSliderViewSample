@@ -2,21 +2,38 @@
 This is a sample Android project to demonstrate how to use Android Slider library created by sung2063.<br/>
 The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
 
-
 ## Screenshots
 
-<table style="border: none;">
-  <tr style="border-collapse: collapse;">
-    <td><img src="screenshots/horizontal_carousel.jpg" width="275" style="margin-right: 25px"/></td>
-    <td><img src="screenshots/vertical_carousel.jpg" width="275" style="margin-right: 25px" /></td>
-    <td><img src="screenshots/slideshow.jpg" width="275" /></td>
-  </tr>
-  <tr>
-    <td>Horizontal Carousel</td>
-    <td>Vertical Carousel</td>
-    <td>Slideshow</td>
-  </tr>
- </table>
+<center>
+  <table>
+    <tr style="border-collapse: collapse;">
+      <td><img src="screenshots/horizontal_carousel.jpg" width="275"/></td>
+      <td><img src="screenshots/vertical_carousel.jpg" width="275"/></td>
+      <td><img src="screenshots/slideshow.jpg" width="275" /></td>
+    </tr>
+    <tr>
+      <td>Horizontal Carousel</td>
+      <td>Vertical Carousel</td>
+      <td>Slideshow</td>
+    </tr>
+   </table>
+ </center>
+ 
+ 
+ ## GIF Images
+
+<center>
+  <table>
+    <tr style="border-collapse: collapse;">
+      <td><img src="gifs/horizontal_carousel.gif" width="250" /></td>
+      <td><img src="gifs/vertical_carousel.gif" width="250" /></td>
+    </tr>
+    <tr>
+      <td>Horizontal Carousel</td>
+      <td>Vertical Carousel</td>
+    </tr>
+   </table>
+ </center>
 
 
 ## Instruction
