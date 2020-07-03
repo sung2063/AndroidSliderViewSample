@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Sample Slider View</string>
+
+    <!-- Custom Strings -->
+    <string name="app_title">Sample Slider View App</string>
+    <string name="app_description">(com.sung2063.slider)</string>
+
+    <string name="app_menu1">Horizontal Carousel</string>
+    <string name="app_menu2">Vertical Carousel</string>
+    <string name="app_menu3">Slideshow</string>
+    <string name="app_menu4">GitHub</string>
+
+    <string name="app_menu1_description">Show layouts with horizontal swiping.</string>
+    <string name="app_menu2_description">Show layouts with vertical swiping.</string>
+    <string name="app_menu3_description">Show slides with slideshow.</string>
+    <string name="app_menu4_description">\@sung2063</string>
+
+    <string name="intro_title1">Difficult roads often lead to beautiful destinations.</string>
+    <string name="intro_title2">It always seems impossible until it\'s done.</string>
+    <string name="intro_title3">Don\'t call it a dream,\ncall it a plan.</string>
+    <string name="intro_title4">Failure is the opportunity to begin again more intelligently.</string>
+    <string name="intro_title5">If you can dream it,\nyou can do it!</string>
+
+    <string name="intro_description1">Anonymous</string>
+    <string name="intro_description2">Nelson Mandela</string>
+    <string name="intro_description3">Anonymous</string>
+    <string name="intro_description4">Henry Ford</string>
+    <string name="intro_description5">Walt Disney</string>
+
+</resources>
