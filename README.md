@@ -44,4 +44,6 @@ The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> an
 
 Check out <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android SliderViews library</a> for more information on library usage.
 
-Happy Sliding! :)
+ ## Contributor 🌟
+ 
+ Sung Hyun Back (@sung2063)
