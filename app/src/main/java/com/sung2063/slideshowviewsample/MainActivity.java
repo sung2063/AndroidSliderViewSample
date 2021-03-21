@@ -2,6 +2,7 @@ package com.sung2063.slideshowviewsample;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements MenuOptionRecycle
 
         // Setup Main Menu
         List<MainOptionModel> mainOptionList = DataCollection.getMainOptionData(getApplicationContext());
-        rvOptions.setLayoutManager(new GridLayoutManager(this, 2));
+        rvOptions.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         menuOptionRecyclerViewAdapter = new MenuOptionRecyclerViewAdapter(this, mainOptionList);
         menuOptionRecyclerViewAdapter.setListener(this);
         rvOptions.setAdapter(menuOptionRecyclerViewAdapter);

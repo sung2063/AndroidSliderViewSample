@@ -13,6 +13,7 @@
         android:layout_height="0dp"
         custom:scrollDirection="vertical"
         custom:showSlideNumber="true"
+        custom:showIndicator="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
