@@ -63,7 +63,7 @@ allprojects {
 
 Next, add the SliderViews and required libraries in <i>app level</i> `build.gradle` and sync the gradle file. 
 ```gradle
-implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.2'
+implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.3'
 implementation 'com.google.android.material:material:1.1.0'
 ```
 
@@ -80,6 +80,7 @@ First, create a CarouselView in your xml file.
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         custom:scrollDirection="horizontal"
+        custom:showIndicator="true"
         custom:showSlideNumber="true" />
 ```
 Set `scrollDirection` attribution to `horizontal` for creating horizontal carousel and `vertical` for vertical carousel.
@@ -151,6 +152,11 @@ Here are available attributions you can use to modify your slider views.
     <tr>
       <td>vertical</td>
       <td>Display the carousel vertically. <i>Field value is 1.</i></td>
+    </tr>
+    <tr>
+      <td>showIndicator</td>
+      <td>boolean</td>
+      <td>Show the dot indicator on the slide if the value true, otherwise do not show.</td>
     </tr>
     <tr>
       <td>showSlideNumber</td>
