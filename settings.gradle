@@ -1,2 +1,5 @@
+/*include ':AndroidSliderViewLibrary'
+project(':AndroidSliderViewLibrary').projectDir = new File("../AndroidSliderViewLibrary/Sliders")*/
+
 include ':app'
 rootProject.name = "SlideShowViewSample"
