@@ -48,6 +48,15 @@ The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> an
 
 Minimum SDK Version: 21 or greater (Update in your <i>app level</i> `build.gradle`)<br/>
 Supported Programming Language: Java
+Add following snippet code in your <i>project level</i> `build.gradle`.
+```gradle
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+```
 <br/><br/>
 <b>2. Add required library</b>
 
@@ -81,7 +90,8 @@ First, create a CarouselView in your xml file.
         android:layout_height="match_parent"
         custom:scrollDirection="horizontal"
         custom:showIndicator="true"
-        custom:showSlideNumber="true" />
+        custom:showSlideNumber="true"
+        custom:slideNumberTextSize="40" />
 ```
 Set `scrollDirection` attribution to `horizontal` for creating horizontal carousel and `vertical` for vertical carousel.
 
@@ -110,8 +120,10 @@ First, create a SlideshowView in your xml file.
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         custom:showIndicator="true"
+        custom:indicatorScale="1"
         custom:delayTimePeriod="5"
-        custom:showSlideNumber="true" />
+        custom:showSlideNumber="true"
+        custom:slideNumberTextSize="40" />
 ```
 
 In your `onCreate()` method in Activity, create your own custom layouts, add layouts to List<ViewGroup>, and start the slideshow. You can add up to 10 layouts in the SlideshowView. 
@@ -159,9 +171,19 @@ Here are available attributions you can use to modify your slider views.
       <td>Show the dot indicator on the slide if the value true, otherwise do not show.</td>
     </tr>
     <tr>
+      <td>indicatorScale</td>
+      <td>float</td>
+      <td>Used for resize the indicator scale from 0 - 1.5.</td>
+    </tr>
+    <tr>
       <td>showSlideNumber</td>
       <td>boolean</td>
       <td>Show the slide number text if the value is true, otherwise do not show.</td>
+    </tr>
+    <tr>
+      <td>slideNumberTextSize</td>
+      <td>int</td>
+      <td>Set the slide number text size in px.</td>
     </tr>
    </table>
  </center>
@@ -181,9 +203,19 @@ Here are available attributions you can use to modify your slider views.
       <td>Show the dot indicator on the slide if the value true, otherwise do not show.</td>
     </tr>
     <tr>
+      <td>indicatorScale</td>
+      <td>float</td>
+      <td>Used for resize the indicator scale from 0 - 1.5.</td>
+    </tr>
+    <tr>
       <td>showSlideNumber</td>
       <td>boolean</td>
       <td>Show the slide number text if the value is true, otherwise do not show.</td>
+    </tr>
+    <tr>
+      <td>slideNumberTextSize</td>
+      <td>int</td>
+      <td>Set the slide number text size in px.</td>
     </tr>
     <tr>
       <td>delayTimePeriod</td>
@@ -199,4 +231,5 @@ Here are available attributions you can use to modify your slider views.
 
  ## Sponsorship
  
- Please sponsor me to my GitHub for contributing more innovative projects and libraries. ❤️
+ Please sponsor me to my GitHub sponsorship page at https://github.com/sponsors/sung2063.
+ Your valueable sponsorship helps me contributing more innovative projects and libraries. ❤️
