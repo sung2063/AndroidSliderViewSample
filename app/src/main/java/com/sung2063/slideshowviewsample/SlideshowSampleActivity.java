@@ -20,6 +20,7 @@ public class SlideshowSampleActivity extends AppCompatActivity {
     // =============================================================================================
     // Variables
     // =============================================================================================
+    private final String TAG = SlideshowSampleActivity.class.getName();
     private SlideshowView slideShowView;
 
     // =============================================================================================
@@ -45,9 +46,9 @@ public class SlideshowSampleActivity extends AppCompatActivity {
             slideShowView.setSlideList(slideshowLayouts);
             slideShowView.launch();
         } catch (SlideOutOfBoundException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         } catch (SlideNullPointerException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         }
 
     }

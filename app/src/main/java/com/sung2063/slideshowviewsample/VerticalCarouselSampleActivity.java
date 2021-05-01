@@ -20,6 +20,7 @@ public class VerticalCarouselSampleActivity extends AppCompatActivity {
     // =============================================================================================
     // Variables
     // =============================================================================================
+    private final String TAG = VerticalCarouselSampleActivity.class.getName();
     private CarouselView carouselView;
 
     // =============================================================================================
@@ -45,9 +46,9 @@ public class VerticalCarouselSampleActivity extends AppCompatActivity {
             carouselView.setSlideList(verticalCarouselLayouts);
             carouselView.launch();
         } catch (SlideOutOfBoundException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         } catch (SlideNullPointerException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         }
     }
 }

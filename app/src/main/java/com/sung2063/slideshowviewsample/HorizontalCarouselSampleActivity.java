@@ -21,6 +21,7 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
     // =============================================================================================
     // Variables
     // =============================================================================================
+    private final String TAG = HorizontalCarouselSampleActivity.class.getName();
     private CarouselView carouselView;
 
     // =============================================================================================
@@ -35,7 +36,7 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
 
         // Get Sample Data & Create the Slides
         List<HorizontalCarouselModel> introSlideDataList = DataCollection.getHorizontalCarouselData(getApplicationContext());
-        List<ViewGroup> horizontalCarouselLayouts = new ArrayList<ViewGroup>();
+        List<ViewGroup> horizontalCarouselLayouts = new ArrayList<>();
         for (int k = 0; k < introSlideDataList.size(); k++) {
             HorizontalCarouselAdapter horizontalSlide = new HorizontalCarouselAdapter(getApplicationContext(), introSlideDataList.get(k));
             horizontalCarouselLayouts.add(horizontalSlide.getRootView());
@@ -46,9 +47,9 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
             carouselView.setSlideList(horizontalCarouselLayouts);
             carouselView.launch();
         } catch (SlideOutOfBoundException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         } catch (SlideNullPointerException e) {
-            Log.e("mTag", e.toString());
+            Log.e(TAG, e.toString());
         }
     }
 }

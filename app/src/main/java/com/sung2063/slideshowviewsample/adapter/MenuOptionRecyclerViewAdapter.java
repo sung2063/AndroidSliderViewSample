@@ -51,8 +51,9 @@ public class MenuOptionRecyclerViewAdapter extends RecyclerView.Adapter<MenuOpti
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MainOptionModel mainOptionData = object.get(position);
         int backgroundId = mainOptionData.getBackgroundId();
-        if (backgroundId != -1)
+        if (backgroundId != -1) {
             holder.clContainer.setBackgroundColor(backgroundId);
+        }
         holder.ivIcon.setImageResource(mainOptionData.getIconId());
         DrawableCompat.setTint(holder.ivIcon.getDrawable(), ContextCompat.getColor(context, mainOptionData.getIconColor()));
         holder.tvTitle.setText(mainOptionData.getTitle());
@@ -74,7 +75,7 @@ public class MenuOptionRecyclerViewAdapter extends RecyclerView.Adapter<MenuOpti
 
         public ViewHolder(View itemView) {
             super(itemView);
-            clContainer =itemView.findViewById(R.id.cl_container);
+            clContainer = itemView.findViewById(R.id.cl_container);
             ivIcon = itemView.findViewById(R.id.iv_icon);
             tvTitle = itemView.findViewById(R.id.tv_title);
             tvDescription = itemView.findViewById(R.id.tv_description);
@@ -83,7 +84,9 @@ public class MenuOptionRecyclerViewAdapter extends RecyclerView.Adapter<MenuOpti
 
         @Override
         public void onClick(View view) {
-            if (menuOptionListener != null) menuOptionListener.onMenuClicked(getAdapterPosition());
+            if (menuOptionListener != null) {
+                menuOptionListener.onMenuClicked(getAdapterPosition());
+            }
         }
     }
 
