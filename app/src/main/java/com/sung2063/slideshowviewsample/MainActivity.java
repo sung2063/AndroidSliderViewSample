@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements MenuOptionRecycle
             case NavigateIntent.SLIDESHOW:
                 intent = new Intent(this, SlideshowSampleActivity.class);
                 break;
+            case NavigateIntent.EXTRA_FEATURE:
+                intent = new Intent(this, ExtraFeatureSampleActivity.class);
+                break;
             case NavigateIntent.GIT_HUB_WEB_PAGE:
                 intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://github.com/sung2063"));
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements MenuOptionRecycle
         public static final int HORIZONTAL_CAROUSEL = 0;
         public static final int VERTICAL_CAROUSEL = 1;
         public static final int SLIDESHOW = 2;
-        public static final int GIT_HUB_WEB_PAGE = 3;
+        public static final int EXTRA_FEATURE = 3;
+        public static final int GIT_HUB_WEB_PAGE = 4;
     }
 }

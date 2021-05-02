@@ -17,7 +17,8 @@ public class DataCollection {
         mainOptionList.add(new MainOptionModel(-1, R.drawable.ic_menu_carousel_horizontal, R.color.menuColor1, context.getString(R.string.app_menu1), context.getString(R.string.app_menu1_description), Color.BLACK));
         mainOptionList.add(new MainOptionModel(-1, R.drawable.ic_menu_carousel_vertical, R.color.menuColor2, context.getString(R.string.app_menu2), context.getString(R.string.app_menu2_description), Color.BLACK));
         mainOptionList.add(new MainOptionModel(-1, R.drawable.ic_menu_slideshow, R.color.menuColor3, context.getString(R.string.app_menu3), context.getString(R.string.app_menu3_description), Color.BLACK));
-        mainOptionList.add(new MainOptionModel(Color.BLACK, R.drawable.ic_github, R.color.menuColor4, context.getString(R.string.app_menu4), context.getString(R.string.app_menu4_description), Color.WHITE));
+        mainOptionList.add(new MainOptionModel(-1, R.drawable.ic_menu_extra_feature, R.color.menuColor4, context.getString(R.string.app_menu4), context.getString(R.string.app_menu4_description), Color.BLACK));
+        mainOptionList.add(new MainOptionModel(Color.BLACK, R.drawable.ic_github, R.color.menuColor5, context.getString(R.string.app_menu5), context.getString(R.string.app_menu5_description), Color.WHITE));
         return mainOptionList;
     }
 
@@ -58,5 +59,15 @@ public class DataCollection {
         slideshowList.add(R.drawable.sample_slideshow_image6);
         return slideshowList;
     }
+    /* ========================================================================================== */
 
+    public static List<Integer> getCatCarouselData() {
+        List<Integer> carouselList = new ArrayList<>();
+        carouselList.add(R.drawable.cat_image1);
+        carouselList.add(R.drawable.cat_image2);
+        carouselList.add(R.drawable.cat_image3);
+        carouselList.add(R.drawable.cat_image4);
+        carouselList.add(R.drawable.cat_image5);
+        return carouselList;
+    }
 }

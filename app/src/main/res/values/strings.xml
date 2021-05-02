@@ -10,12 +10,14 @@
     <string name="app_menu1">Horizontal Carousel</string>
     <string name="app_menu2">Vertical Carousel</string>
     <string name="app_menu3">Slideshow</string>
-    <string name="app_menu4">GitHub</string>
+    <string name="app_menu4">Extra Features</string>
+    <string name="app_menu5">GitHub</string>
 
     <string name="app_menu1_description">Show layouts with horizontal swiping.</string>
     <string name="app_menu2_description">Show layouts with vertical swiping.</string>
     <string name="app_menu3_description">Show slides with slideshow.</string>
-    <string name="app_menu4_description">\@sung2063</string>
+    <string name="app_menu4_description">Show layouts with custom indicator.</string>
+    <string name="app_menu5_description">\@sung2063</string>
 
     <string name="intro_title1">Difficult roads often lead to beautiful destinations.</string>
     <string name="intro_title2">It always seems impossible until it\'s done.</string>

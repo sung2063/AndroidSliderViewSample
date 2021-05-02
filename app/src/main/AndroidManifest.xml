@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SlideshowSampleActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -24,6 +23,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".HorizontalCarouselSampleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SlideshowSampleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExtraFeatureSampleActivity"
             android:screenOrientation="portrait" />
     </application>
 
