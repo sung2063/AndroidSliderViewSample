@@ -2,7 +2,7 @@
 
 <img src="banner/AndroidSliderViews%20Banner.jpg" width="100%" />
 
-This is a sample Android project to demonstrate how to use Android Slider library created by sung2063.<br/>
+This is a sample Android project to demonstrate how to use <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android Slider Views library</a> created by sung2063.<br/>
 The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
   
  ## 🎬 GIF Images
@@ -128,8 +128,6 @@ slideshowView.launch();
 
 Your SlideshowView is now displayed on your app! 👏<br/>
 
-Check out my <a href="https://github.com/sung2063/AndroidSliderViewSample">Android Slide Sample App</a> project for more example on using SliderView library. 📚
-
 ## 🎨 Attributions
 
 Here are available attributions you can use to modify your slider views.
@@ -231,6 +229,10 @@ Here are available attributions you can use to modify your slider views.
     </tr>
    </table>
  </center>
+
+ ## 📚 Library
+ 
+ <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">AndroidSlidersView library</a> by @sung2063
 
  ## 🌟 Contributor
  
