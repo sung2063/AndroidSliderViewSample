@@ -1,7 +1,6 @@
 package com.sung2063.slideshowviewsample;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,7 +8,6 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import com.sung2063.slideshowviewsample.adapter.MenuOptionRecyclerViewAdapter;
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements MenuOptionRecycle
     // =============================================================================================
     private Button btSponsorship;
     private RecyclerView rvOptions;
-    private MenuOptionRecyclerViewAdapter menuOptionRecyclerViewAdapter;
+    private MenuOptionRecyclerViewAdapter menuOptionAdapter;
 
     // =============================================================================================
     // Activity Life Cycle
@@ -39,12 +37,13 @@ public class MainActivity extends AppCompatActivity implements MenuOptionRecycle
         rvOptions = findViewById(R.id.rv_options);
 
         // Setup Main Menu
-        btSponsorship.setPaintFlags(btSponsorship.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         List<MainOptionModel> mainOptionList = DataCollection.getMainOptionData(getApplicationContext());
         rvOptions.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        menuOptionRecyclerViewAdapter = new MenuOptionRecyclerViewAdapter(this, mainOptionList);
-        menuOptionRecyclerViewAdapter.setListener(this);
-        rvOptions.setAdapter(menuOptionRecyclerViewAdapter);
+        menuOptionAdapter = new MenuOptionRecyclerViewAdapter(this, mainOptionList);
+        menuOptionAdapter.setListener(this);
+        rvOptions.setAdapter(menuOptionAdapter);
+
+        btSponsorship.setPaintFlags(btSponsorship.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         // Respond
         btSponsorship.setOnClickListener(view -> {

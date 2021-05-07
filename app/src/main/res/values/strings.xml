@@ -4,7 +4,7 @@
 
     <!-- Custom Strings -->
     <string name="app_title">Sample Slider View App</string>
-    <string name="app_description">(com.sung2063.sliders)</string>
+    <string name="app_description">(@sung2063/AndroidSliderViewsLibrary)</string>
     <string name="sponsor_message">Sponsor to @sung2063</string>
 
     <string name="app_menu1">Horizontal Carousel</string>
