@@ -1,6 +1,6 @@
 # Android SliderView Sample App
 
-<img src="banner/AndroidSliderViews%20Banner.jpg" width="100%" />
+<img src="banner/AndroidSliderViews%20Banner%202.jpg" width="100%" />
 
 This is a sample Android project to demonstrate how to use <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android Slider Views library</a> created by sung2063.<br/>
 The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
