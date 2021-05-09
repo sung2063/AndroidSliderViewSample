@@ -21,7 +21,6 @@ public class SlideshowSampleActivity extends AppCompatActivity {
     // Variables
     // =============================================================================================
     private final String TAG = SlideshowSampleActivity.class.getName();
-    private SlideshowView slideShowView;
 
     // =============================================================================================
     // Activity Life Cycle
@@ -31,7 +30,7 @@ public class SlideshowSampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slideshow_sample);
 
-        slideShowView = findViewById(R.id.slideshow_view);
+        SlideshowView slideShowView = findViewById(R.id.slideshow_view);
 
         // Get Sample Data & Create the Slides
         List<Integer> slideshowDataList = DataCollection.getSlideshowData();

@@ -22,7 +22,6 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
     // Variables
     // =============================================================================================
     private final String TAG = HorizontalCarouselSampleActivity.class.getName();
-    private CarouselView carouselView;
 
     // =============================================================================================
     // Activity Life Cycle
@@ -32,7 +31,7 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horizontal_carousel_sample);
 
-        carouselView = findViewById(R.id.carousel_view);
+        CarouselView carouselView = findViewById(R.id.carousel_view);
 
         // Get Sample Data & Create the Slides
         List<HorizontalCarouselModel> introSlideDataList = DataCollection.getHorizontalCarouselData(getApplicationContext());
