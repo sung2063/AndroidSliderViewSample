@@ -21,7 +21,6 @@ public class VerticalCarouselSampleActivity extends AppCompatActivity {
     // Variables
     // =============================================================================================
     private final String TAG = VerticalCarouselSampleActivity.class.getName();
-    private CarouselView carouselView;
 
     // =============================================================================================
     // Activity Life Cycle
@@ -31,7 +30,7 @@ public class VerticalCarouselSampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vertical_carousel_sample);
 
-        carouselView = findViewById(R.id.carousel_view);
+        CarouselView carouselView = findViewById(R.id.carousel_view);
 
         // Get Sample Data & Create the Slides
         List<Integer> verticalCarouselDataList = DataCollection.getVerticalCarouselData();

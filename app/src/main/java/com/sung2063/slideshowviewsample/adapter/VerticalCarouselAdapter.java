@@ -29,13 +29,10 @@ public class VerticalCarouselAdapter {
     // Methods
     // =============================================================================================
     private void initViews() {
-
         LayoutInflater inflater = LayoutInflater.from(context);
         ViewGroup rootLayout = (ViewGroup) inflater.inflate(R.layout.image_template_layout, null);
-
-        vgContainer = (ViewGroup) rootLayout.findViewById(R.id.cl_container);
-        ivImage = (ImageView) rootLayout.findViewById(R.id.iv_image);
-
+        vgContainer = rootLayout.findViewById(R.id.cl_container);
+        ivImage = rootLayout.findViewById(R.id.iv_image);
     }
 
     private void populateData(Integer drawableImageId) {

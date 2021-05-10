@@ -59,15 +59,4 @@ public class DataCollection {
         slideshowList.add(R.drawable.sample_slideshow_image6);
         return slideshowList;
     }
-    /* ========================================================================================== */
-
-    public static List<Integer> getCatCarouselData() {
-        List<Integer> carouselList = new ArrayList<>();
-        carouselList.add(R.drawable.cat_image1);
-        carouselList.add(R.drawable.cat_image2);
-        carouselList.add(R.drawable.cat_image3);
-        carouselList.add(R.drawable.cat_image4);
-        carouselList.add(R.drawable.cat_image5);
-        return carouselList;
-    }
 }

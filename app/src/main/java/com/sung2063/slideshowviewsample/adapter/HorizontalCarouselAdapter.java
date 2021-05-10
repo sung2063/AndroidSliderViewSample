@@ -3,6 +3,7 @@ package com.sung2063.slideshowviewsample.adapter;
 import android.content.Context;
 
 import androidx.core.content.ContextCompat;
+
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -21,9 +22,8 @@ public class HorizontalCarouselAdapter {
     public HorizontalCarouselAdapter(Context context, Integer drawableImageId) {
         LayoutInflater inflater = LayoutInflater.from(context);
         ViewGroup rootLayout = (ViewGroup) inflater.inflate(R.layout.image_template_layout, null);
-
-        vgContainer = (ViewGroup) rootLayout.findViewById(R.id.cl_container);
-        ImageView ivImage = (ImageView) rootLayout.findViewById(R.id.iv_image);
+        vgContainer = rootLayout.findViewById(R.id.cl_container);
+        ImageView ivImage = rootLayout.findViewById(R.id.iv_image);
 
         ivImage.setImageDrawable(context.getDrawable(drawableImageId));
     }
@@ -32,18 +32,16 @@ public class HorizontalCarouselAdapter {
     public HorizontalCarouselAdapter(Context context, HorizontalCarouselModel introSlideData) {
         LayoutInflater inflater = LayoutInflater.from(context);
         ViewGroup rootLayout = (ViewGroup) inflater.inflate(R.layout.quotation_icon_template_layout, null);
-
-        vgContainer = (ViewGroup) rootLayout.findViewById(R.id.cl_container);
-        ImageView ivIcon = (ImageView) rootLayout.findViewById(R.id.iv_icon);
-        TextView tvTitle = (TextView) rootLayout.findViewById(R.id.tv_title);
-        TextView tvDescription = (TextView) rootLayout.findViewById(R.id.tv_description);
+        vgContainer = rootLayout.findViewById(R.id.cl_container);
+        ImageView ivIcon = rootLayout.findViewById(R.id.iv_icon);
+        TextView tvTitle = rootLayout.findViewById(R.id.tv_title);
+        TextView tvDescription = rootLayout.findViewById(R.id.tv_description);
 
         vgContainer.setBackgroundColor(context.getResources().getColor(introSlideData.getBackgroundColor()));
         ivIcon.setImageDrawable(context.getDrawable(introSlideData.getIconId()));
         ivIcon.setColorFilter(ContextCompat.getColor(context, introSlideData.getIconColor()), android.graphics.PorterDuff.Mode.SRC_IN);
         tvTitle.setText(introSlideData.getTitle());
         tvDescription.setText(introSlideData.getDescription());
-
     }
 
     // Methods =========================================================

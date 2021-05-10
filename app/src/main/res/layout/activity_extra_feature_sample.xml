@@ -15,6 +15,7 @@
         app:slideNumberTextSize="45"
         app:showIndicator="true"
         app:indicatorScale="1"
+        app:showSubTitle="true"
         app:indicatorSelectedIcon="@drawable/ic_paw_selected"
         app:indicatorUnselectedIcon="@drawable/ic_paw_unselected"
         app:layout_constraintBottom_toBottomOf="parent"
