@@ -59,7 +59,7 @@ allprojects {
 
 Next, add the SliderViews and required libraries in <i>app level</i> `build.gradle` and sync the gradle file. 
 ```gradle
-implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.5'
+implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6'
 implementation 'com.google.android.material:material:1.1.0'
 ```
 
@@ -75,19 +75,21 @@ First, create a CarouselView in your xml file.
         android:id="@+id/carousel_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:scrollDirection="horizontal"
         app:showIndicator="true"
-        app:showSlideNumber="true"
-        app:slideNumberTextSize="40" />
+        app:scrollDirection="horizontal"
+        app:showSlideNumber="true" />
 ```
 Set `scrollDirection` attribution to `horizontal` for creating horizontal carousel and `vertical` for vertical carousel.
 
 In your `onCreate()` method in Activity, create your own custom layouts, add layouts to List<ViewGroup>, and start the carousel. You can add up to 10 layouts in the CarouselView. 
+
+From <i>version 1.6</i>, you can also include sub-title of each slides. In that case, you need to make DescriptiveSlideModel objects that holds slide layout and sub-title and add to ``List<DescriptiveSlideModel>``. Also, do not forget to add <b>app:showSubTitle="true"</b> into your CarouselView in xml. The default is false.
+
 ```java
 CarouselView carouselView = findViewById(R.id.carousel_view);
 
 // Create your own layouts...
-// Create List<ViewGroup> object...
+// Create List<ViewGroup> object or List<DescriptiveSlideModel>...
 // Add your layouts to list object...
 
 carouselView.setSlideList(layoutList);
@@ -107,19 +109,19 @@ First, create a SlideshowView in your xml file.
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:showIndicator="true"
-        app:indicatorScale="1"
         app:delayTimePeriod="5"
-        app:showSlideNumber="true"
-        app:slideNumberTextSize="40" />
+        app:showSlideNumber="true" />
 ```
 
-In your `onCreate()` method in Activity, create your own custom layouts, add layouts to List<ViewGroup>, and start the slideshow. You can add up to 10 layouts in the SlideshowView. 
+In your `onCreate()` method in Activity, create your own custom layouts, add layouts to List<ViewGroup>, and start the slideshow. You can add up to 10 layouts in the SlideshowView.
+
+From <i>version 1.6</i>, you can also include sub-title of each slides. In that case, you need to make DescriptiveSlideModel objects that holds slide layout and sub-title and add to ``List<DescriptiveSlideModel>``. Also, do not forget to add <b>app:showSubTitle="true"</b> into your SlideshowView in xml. The default is false.
 
 ```java
 SlideshowView slideshowView = findViewById(R.id.slideshow_view);
 
 // Create your own layouts...
-// Create List<ViewGroup> object...
+// Create List<ViewGroup> object or List<DescriptiveSlideModel>...
 // Add your layouts to list object...
 
 slideshowView.setSlideList(layoutList);
@@ -180,6 +182,11 @@ Here are available attributions you can use to modify your slider views.
       <td>int</td>
       <td>Set the slide number text size in px.</td>
     </tr>
+    <tr>
+      <td>showSubTitle</td>
+      <td>boolean</td>
+      <td>Show the sub-title if the value is true, otherwise do not show.</td>
+    </tr>
    </table>
  </center>
 
@@ -227,6 +234,11 @@ Here are available attributions you can use to modify your slider views.
       <td>int</td>
       <td>The slide delay time in second. Default is 5 seconds.</td>
     </tr>
+    <tr>
+      <td>showSubTitle</td>
+      <td>boolean</td>
+      <td>Show the sub-title if the value is true, otherwise do not show.</td>
+    </tr>
    </table>
  </center>
 
@@ -240,5 +252,6 @@ Here are available attributions you can use to modify your slider views.
 
  ## 💖 Sponsorship
  
- Please sponsor me to my GitHub sponsorship page at https://github.com/sponsors/sung2063.
+ Sponsor me at GitHub Sponsor page at https://github.com/sponsors/sung2063.
+ 
  Your valueable sponsorship helps me contributing more innovative projects and libraries. ❤️
