@@ -4,6 +4,12 @@
 
 This is a sample Android project to demonstrate how to use <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android Slider Views library</a> created by sung2063.<br/>
 The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
+
+## 💖 Sponsor
+
+Android Slider Views library updates regularly. Your valueable sponsorship helps me contributing more features and maintaining the library. Click heart button below to sponsor me!
+
+[![Github Sponsorship](marketing/sponsor_icon.png)](https://github.com/sponsors/sung2063)
   
  ## 🎬 GIF Images
 
@@ -249,9 +255,3 @@ Here are available attributions you can use to modify your slider views.
  ## 🌟 Contributor
  
  Sung Hyun Back (@sung2063)
-
- ## 💖 Sponsorship
- 
- Sponsor me at GitHub Sponsor page at https://github.com/sponsors/sung2063.
- 
- Your valueable sponsorship helps me contributing more innovative projects and libraries. ❤️
