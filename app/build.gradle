@@ -8,8 +8,8 @@ android {
         applicationId "com.sung2063.slideshowviewsample"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 5
-        versionName "1.5"
+        versionCode 6
+        versionName "1.6.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,7 +39,7 @@ dependencies {
 
     // Server Libraries
     implementation 'com.google.android.material:material:1.1.0'
-    implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6'
+    implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6.2'
 
     // Dependency on a local library module
     //implementation project(":AndroidSliderViewLibrary")
