@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.ViewGroup;
 
-import com.sung2063.sliders.exceptions.SlideNullPointerException;
-import com.sung2063.sliders.exceptions.SlideOutOfBoundException;
+import com.sung2063.sliders.exception.SlideNullPointerException;
+import com.sung2063.sliders.exception.SlideOutOfBoundException;
 import com.sung2063.sliders.slideshow.SlideshowView;
 import com.sung2063.slideshowviewsample.adapter.SlideshowAdapter;
 import com.sung2063.slideshowviewsample.data.DataCollection;
