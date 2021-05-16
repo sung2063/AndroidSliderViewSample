@@ -7,7 +7,7 @@ The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> an
 
 ## 💖 Sponsor
 
-Android Slider Views library updates regularly. Your valueable sponsorship helps me contributing more features and maintaining the library. Click heart button below to sponsor me!
+Android Slider Views library updates regularly. Your valuable sponsorship helps me contributing more features and maintaining the library. Click heart button below to sponsor me!
 
 [![Github Sponsorship](marketing/sponsor_iconx64.png)](https://github.com/sponsors/sung2063)
   
@@ -65,7 +65,7 @@ allprojects {
 
 Next, add the SliderViews and required libraries in <i>app level</i> `build.gradle` and sync the gradle file. 
 ```gradle
-implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6'
+implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6.2'
 implementation 'com.google.android.material:material:1.1.0'
 ```
 
@@ -166,7 +166,7 @@ Here are available attributions you can use to modify your slider views.
     <tr>
       <td>indicatorScale</td>
       <td>float</td>
-      <td>Used for resize the indicator scale from 0 - 1.5.</td>
+      <td>Used for resize the indicator scale from 0.5 - 1.5.</td>
     </tr>
     <tr>
       <td>indicatorSelectedIcon</td>
@@ -213,7 +213,7 @@ Here are available attributions you can use to modify your slider views.
     <tr>
       <td>indicatorScale</td>
       <td>float</td>
-      <td>Used for resize the indicator scale from 0 - 1.5.</td>
+      <td>Used for resize the indicator scale from 0.5 - 1.5.</td>
     </tr>
     <tr>
       <td>indicatorSelectedIcon</td>
