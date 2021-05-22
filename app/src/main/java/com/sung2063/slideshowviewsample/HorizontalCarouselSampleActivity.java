@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.sung2063.sliders.carousel.CarouselView;
 import com.sung2063.sliders.exception.SlideNullPointerException;
 import com.sung2063.sliders.exception.SlideOutOfBoundException;
+import com.sung2063.sliders.listener.SliderListener;
 import com.sung2063.slideshowviewsample.adapter.HorizontalCarouselAdapter;
 import com.sung2063.slideshowviewsample.data.DataCollection;
 import com.sung2063.slideshowviewsample.model.HorizontalCarouselModel;
@@ -41,9 +43,16 @@ public class HorizontalCarouselSampleActivity extends AppCompatActivity {
             horizontalCarouselLayouts.add(horizontalSlide.getRootView());
         }
 
+        // Add callback listener
+        SliderListener sliderListener = position -> {
+            // TODO: Do something when slide is clicked
+            Toast.makeText(getApplicationContext(), "Clicked slider Position: " + position, Toast.LENGTH_SHORT).show();
+        };
+
         // Start the slideshow
         try {
             carouselView.setSlideList(horizontalCarouselLayouts);
+            carouselView.setSliderListener(sliderListener);
             carouselView.launch();
         } catch (SlideOutOfBoundException e) {
             Log.e(TAG, e.toString());

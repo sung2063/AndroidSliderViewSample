@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.sung2063.sliders.carousel.CarouselView;
 import com.sung2063.sliders.exception.SlideNullPointerException;
 import com.sung2063.sliders.exception.SlideOutOfBoundException;
+import com.sung2063.sliders.listener.SliderListener;
 import com.sung2063.sliders.model.DescriptiveSlideModel;
 import com.sung2063.slideshowviewsample.adapter.HorizontalCarouselAdapter;
 
@@ -48,9 +50,16 @@ public class ExtraFeatureSampleActivity extends AppCompatActivity {
         HorizontalCarouselAdapter horizontalSlide5 = new HorizontalCarouselAdapter(getApplicationContext(), R.drawable.cat_image5);
         descriptiveSlideList.add(new DescriptiveSlideModel(horizontalSlide5.getRootView(), "\uD83C\uDF42 \uD83C\uDF42 \uD83C\uDF42 \uD83C\uDF42"));
 
+        // Add callback listener
+        SliderListener sliderListener = position -> {
+            // TODO: Do something when slide is clicked
+            Toast.makeText(getApplicationContext(), "Clicked slider Position: " + position, Toast.LENGTH_SHORT).show();
+        };
+
         // Start the slideshow
         try {
             carouselView.setDescriptiveSlideList(descriptiveSlideList);
+            carouselView.setSliderListener(sliderListener);
             carouselView.launch();
         } catch (SlideOutOfBoundException e) {
             Log.e(TAG, e.toString());
