@@ -67,13 +67,15 @@ allprojects {
 
 Next, add the SliderViews and required libraries in <i>app level</i> `build.gradle` and sync the gradle file. 
 ```gradle
-implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.6.2'
+implementation 'com.github.sung2063:AndroidSliderViewsLibrary:1.7'
 implementation 'com.google.android.material:material:1.1.0'
 ```
 
 Now you are ready to use SliderView Library. You can start creating CarouselView and SlideshowView.<br/>
 
-### CarouselView
+<hr/>
+
+### <i>CarouselView</i>
 
 CarouselView can be used for your application intro and show multiple images or videos in one layout with scrolling. CarouselView by Sliders library supports both horizontal and vertical scrolls.
 
@@ -106,7 +108,9 @@ carouselView.launch();
 
 Your CarouselView is now displayed on your app! 👏<br/>
 
-### SlideshowView
+<hr/>
+
+### <i>SlideshowView</i>
 
 SlideshowView can be used to show the multiple layouts by certain period of time. You can set how much time you want to show each layout to the user.
 
@@ -137,6 +141,25 @@ slideshowView.launch();
 ```
 
 Your SlideshowView is now displayed on your app! 👏<br/>
+
+<hr/>
+
+### Add Callback Action
+
+You can also get callback from slider when it is clicked. On your Activity, create a SliderListener object with implementing own action and pass this object to the view by calling `setSliderListener`. Here is the snippet code how to implement the callback: 
+
+```java
+// Create a callback interface
+SliderListener sliderListener = position -> {
+     // TODO: Do something when slide is clicked
+};
+
+// Set callback object to the View
+carouselView.setSliderListener(sliderListener);    // If you are using Carousel
+slideshowView.setSliderListener(sliderListener);   // If you are using Slideshow
+```
+
+<br/>
 
 ## 🎨 Attributions
 
