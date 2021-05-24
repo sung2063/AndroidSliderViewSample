@@ -2,6 +2,12 @@
 
 <img src="banner/AndroidSliderViews%20Banner%202.jpg" width="100%" />
 
+<div>
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" style="float:left" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" style="float:left" />
+</div>
+<br/>
+
 This is a sample Android project to demonstrate how to use <a href="https://github.com/sung2063/AndroidSliderViewsLibrary">Android Slider Views library</a> created by sung2063.<br/>
 The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> and <b>SlideshowView</b>.
 
@@ -9,7 +15,7 @@ The sample app includes using of <b>Horizontal and Vertical CarouselViews</b> an
 
 Android Slider Views library updates regularly. Your valuable sponsorship helps me contributing more features and maintaining the library. Support me for building more interesting projects! 💜
 
-<div>
+<div align="center">
 <a href="https://github.com/sponsors/sung2063"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" style="float: left" /></a>
 <a href="https://www.paypal.com/donate?business=sunghyunb1991%40gmail.com&item_name=GitHub+Open+Source+Project+Sponsorship&currency_code=USD"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" /></a>
 </div>
