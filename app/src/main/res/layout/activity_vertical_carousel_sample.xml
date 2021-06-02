@@ -15,6 +15,7 @@
         app:slideNumberTextSize="45"
         app:showIndicator="true"
         app:indicatorScale="1"
+        app:showSlideButtons="false"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
