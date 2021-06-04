@@ -178,8 +178,6 @@ carouselView.setSliderListener(sliderListener);    // If you are using Carousel
 slideshowView.setSliderListener(sliderListener);   // If you are using Slideshow
 ```
 
-<br/>
-
 ## 🎨 Attributions <a name="attributions" />
 
 Here are available attributions you can use to modify your slider views.
